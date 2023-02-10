@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --white: #f1f1f1;
+    --black: #222326;
+    --color1: #F26389;
+    --color2: #F2134F;
+    --color3: #F2133C;
+    --color4: #D91122;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    color: var(--black);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+body.acess {
+    flex-direction: row-reverse;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 44vw;
+    height: 100vh;
+    padding: 6rem 0 9rem 0;
+
+    background-color: var(--white);
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, 0.25);
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 60px;
+    color: #F2133C;
+}
+
+header div.row {
+    width: 255px;
+    height: 0px;
+    border: 2px solid #D91122;
+    border-radius: 16px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+.input-container input {
+    width: 22rem;
+    height: 3rem;
+    padding: 1rem;
+    transition: all 0.2s;
+
+    background: var(--black);
+    font-family: 'Poppins';
+    font-size: 1.1em;
+    line-height: 1.5em;
+    color: var(--white);
+
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-container input:focus {
+    border-bottom: 2px solid var(--color3);
+}
+
+.input-container input::placeholder {
+    color: transparent;
+}
+
+.input-container label {
+    position: absolute;
+
+    top: 0.95rem;
+    left: 10px;
+
+    font-size: 0.9em;
+    color: var(--white);
+
+    pointer-events: none;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+}
+
+.input-container input:required:invalid+label {
+    color: var(--white);
+}
+
+.input-container input:focus:required:invalid {
+    border-bottom: 2px solid var(--white);
+}
+
+.input-container input:focus+label,
+.input-container input:not(:placeholder-shown)+label {
+    font-size: 13px;
+    top: -25px;
+    color: var(--color3);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: end;
+}
+
+footer button {
+    width: 200px;
+    height: 50px;
+
+    color: var(--white);
+    background: var(--color3);
+    border: none;
+    border-radius: 24px;
+
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1.5em;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+
+    transition-duration: .3s;
+}
+
+footer button:hover {
+    background-color: var(--color1);
+    border-bottom: 4px solid #710c1f;
+    box-shadow: 0px 8px 16px rgba(242, 99, 137, 0.4);
+    transform: translateY(-5px);
+    transition-duration: .3s;
+}
+
+footer button:active {
+    transform: translateY(5px);
+}
+
+footer p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: .8em;
+    line-height: 36px;
+    text-align: center;
+}
+
+footer p a {
+    color: var(--color2);
+    transition-duration: 0.2s;
+}
+
+footer p a:hover {
+    font-weight: 700;
+    color: var(--color1);
+    transition-duration: 0.2s;
+}
+
+section.section-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 66vw;
+    background-color: var(--black);
+}
+
+section.section-left img {
+    height: 50vh;
+}
+
+section.section-left h1 {
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 4em;
+    line-height: 80px;
+    color: var(--white);
+}
+
+section.section-left h1 span {
+    color: var(--color4);
+}

@@ -5,37 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ForEtec | Faça seu login</title>
+    <title>ForEtec | A plataforma que veio para auxiliar os etequianos!</title>
+    <link rel="stylesheet" href="assets/css/index.css">
 </head>
 
 <body>
-    <form method="post">
-        <header>
-            <h1>Login</h1>
-            <div class="row"></div>
-        </header>
-
-        <main>
-            <fieldset>
-                <label for="rm">Registro de aluno</label>
-                <input type="number" name="rm" id="rm" max="99999">
-            </fieldset>
-            <fieldset>
-                <label for="password">Senha</label>
-                <input type="password" name="password" id="password">
-            </fieldset>
-        </main>
-
-        <footer>
-            <button type="submit">Entrar</button>
-            <p>Ainda não realizou seu primeiro acesso? <a href="acess.php">Clique aqui!</a></p>
-        </footer>
-    </form>
+    <header>
+        <h1>For<span class="title-red">Etec</span></h1>
+    </header>
 
     <section>
-        <img src="assets/img/logo-foretec.png" alt="Logo do aplicativo o número quatro com um lápis">
-        <h1>For<span class="title-red">Etec</span></h1>
+        <img src="assets/img/illustration-raising-hand-study.svg" alt="imagem de uma pessoa estudando">
+        <div>
+            <h1>A plataforma que veio para auxiliar os etequianos!</h1>
+            <p>Acesse com o seu RA e data de nascimento</p>
+
+            <a href=""><button>cadastre-se agora</button></a>
+            <a href=""><button class="acess">já tenho uma conta</button></a>
+        </div>
     </section>
+
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci optio aliquam cupiditate magnam tempore repellendus cum hic! Beatae amet voluptate necessitatibus! Labore, nostrum dolor. Saepe rerum omnis unde illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, doloribus. Necessitatibus quam minima sit excepturi possimus! Modi et a temporibus dolorem iste placeat nam neque quia voluptatem aperiam? Nisi, sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aliquid vel possimus officiis dicta id nostrum voluptatem rem dolorem, pariatur, molestiae voluptas, deleniti saepe sed doloribus tempora nisi. Recusandae, optio!</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci optio aliquam cupiditate magnam tempore repellendus cum hic! Beatae amet voluptate necessitatibus! Labore, nostrum dolor. Saepe rerum omnis unde illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, doloribus. Necessitatibus quam minima sit excepturi possimus! Modi et a temporibus dolorem iste placeat nam neque quia voluptatem aperiam? Nisi, sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aliquid vel possimus officiis dicta id nostrum voluptatem rem dolorem, pariatur, molestiae voluptas, deleniti saepe sed doloribus tempora nisi. Recusandae, optio!</h1>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci optio aliquam cupiditate magnam tempore repellendus cum hic! Beatae amet voluptate necessitatibus! Labore, nostrum dolor. Saepe rerum omnis unde illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, doloribus. Necessitatibus quam minima sit excepturi possimus! Modi et a temporibus dolorem iste placeat nam neque quia voluptatem aperiam? Nisi, sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aliquid vel possimus officiis dicta id nostrum voluptatem rem dolorem, pariatur, molestiae voluptas, deleniti saepe sed doloribus tempora nisi. Recusandae, optio!</h1>
 </body>
 
 </html>

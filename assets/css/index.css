@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --white: #f1f1f1;
+    --black: #222326;
+    --color1: #F26389;
+    --color2: #F2134F;
+    --color3: #F2133C;
+    --color4: #D91122;
+
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    color: var(--black);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 9vh;
+
+    padding: 0.5vh 0;
+    position: fixed;
+    box-shadow: 0px 0px 16px rgb(0, 0, 0);
+}
+
+header h1 {
+    font-family: 'Quicksand';
+    font-weight: bold;
+    font-size: 2.5em;
+    line-height: 50px;
+    color: var(--white);
+
+    margin-left: 7vw;
+}
+
+span.title-red {
+    color: var(--color4);
+}
+
+section {
+    background-color: var(--black);
+    box-shadow: inset 0px 0px 16px rgb(0, 0, 0, 0.25);
+
+    max-height: 91vh;
+    max-width: 100vw;
+    padding: 5vh 7vw 0 7vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5vw;
+}
+
+section img {
+    width: 32rem;
+    height: 32rem;
+    margin-top: 2rem;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    max-width: 50%;
+}
+
+section div * {
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+section div h1 {
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 102.5%;
+    color: var(--white);
+    text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+section div p {
+    color: var(--color3);
+    font-size: 0.8em;
+    line-height: 0%;
+    text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+section div button {
+    width: 12rem;
+    padding: .5rem 0;
+
+    background: var(--color3);
+    filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+    border: none;
+    border-bottom: 4px solid #4D000E;
+    outline: none;
+
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 30px;
+
+    letter-spacing: -0.05em;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    transition-duration: .3s;
+}
+
+section div button.acess {
+    background: transparent;
+    border: 2px solid #3F525B;
+    border-bottom: 4px solid #3F525B;
+    transition-duration: .3s;
+}
+
+section div button.acess:hover {
+    background-color: #3F525B;
+    border: 2px solid var(--black);
+    border-bottom: 4px solid var(--black);
+    box-shadow: 0px 8px 16px rgba(63, 82, 91, 0.4);
+    transform: translateY(-5px);
+    transition-duration: .3s;
+}
+
+section div button:hover {
+    background-color: var(--color2);
+    box-shadow: 0px 8px 16px rgba(242, 99, 137, 0.4);
+    transform: translateY(-5px);
+    transition-duration: .3s;
+}
+
+section div button:active {
+    transform: translateY(5px);
+}

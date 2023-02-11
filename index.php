@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForEtec | A plataforma que veio para auxiliar os etequianos!</title>
     <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="shortcut icon" href="assets\img\favicon.ico" type="image/x-icon">
 </head>
 
 <body>

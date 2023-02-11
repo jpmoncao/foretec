@@ -20,7 +20,7 @@
         <div>
             <h1>A plataforma que veio para auxiliar os etequianos!</h1>
             <p>Acesse com o seu RA e data de nascimento</p>
-
+    teste
             <a href=""><button>cadastre-se agora</button></a>
             <a href=""><button class="acess">já tenho uma conta</button></a>
         </div>

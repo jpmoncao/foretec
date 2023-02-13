@@ -7,7 +7,7 @@
     --color2: #F2134F;
     --color3: #F2133C;
     --color4: #D91122;
-
+    --color5: #AAA5A5;
     font-size: 16px;
     font-weight: 400;
     font-style: normal;
@@ -144,4 +144,35 @@ section div button:hover {
 
 section div button:active {
     transform: translateY(5px);
+}
+
+main{
+    font-family: 'Quicksand';
+    display: flex;
+    background-color: #2B2C30;
+}
+
+.div-top {
+    margin-left: 2rem;
+}
+
+.div-top h1 {
+    color: #FFFFFF;
+    margin-top: 5rem;
+    font-size: 1.5rem;
+    line-height: 2.9rem;
+    
+}
+.img-book {
+    margin-top: 3rem;
+    margin-left: 12rem;
+    width: 15%;
+    height: 15%;
+}
+.div-top p {
+    color: var(--color5);
+    font-size: 1rem;
+    line-height: 1.8rem;
+    margin-top: 0.5rem;
+    width: 67%;
 }

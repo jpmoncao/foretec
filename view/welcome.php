@@ -30,9 +30,14 @@
         </div>
     </section>
 
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci optio aliquam cupiditate magnam tempore repellendus cum hic! Beatae amet voluptate necessitatibus! Labore, nostrum dolor. Saepe rerum omnis unde illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, doloribus. Necessitatibus quam minima sit excepturi possimus! Modi et a temporibus dolorem iste placeat nam neque quia voluptatem aperiam? Nisi, sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aliquid vel possimus officiis dicta id nostrum voluptatem rem dolorem, pariatur, molestiae voluptas, deleniti saepe sed doloribus tempora nisi. Recusandae, optio!</h1>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci optio aliquam cupiditate magnam tempore repellendus cum hic! Beatae amet voluptate necessitatibus! Labore, nostrum dolor. Saepe rerum omnis unde illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, doloribus. Necessitatibus quam minima sit excepturi possimus! Modi et a temporibus dolorem iste placeat nam neque quia voluptatem aperiam? Nisi, sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aliquid vel possimus officiis dicta id nostrum voluptatem rem dolorem, pariatur, molestiae voluptas, deleniti saepe sed doloribus tempora nisi. Recusandae, optio!</h1>
-    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias adipisci optio aliquam cupiditate magnam tempore repellendus cum hic! Beatae amet voluptate necessitatibus! Labore, nostrum dolor. Saepe rerum omnis unde illo. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non, doloribus. Necessitatibus quam minima sit excepturi possimus! Modi et a temporibus dolorem iste placeat nam neque quia voluptatem aperiam? Nisi, sequi. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque aliquid vel possimus officiis dicta id nostrum voluptatem rem dolorem, pariatur, molestiae voluptas, deleniti saepe sed doloribus tempora nisi. Recusandae, optio!</h1>
+    <main>
+    <img class="img-book" src="assets/img/book-animate.gif" alt="gif de um livro"> 
+        <div class="div-top">
+            <h1 class="teste">O método mais divertido do mundo de estudar</h1>
+            <p>Estude de maneira fácil e divertida com a plataforma For<span class="title-red">Etec</span>! Com lições rápidas e interativas atribuidas pelos seus próprios professores.</p>
+        </div>
+    </main>
+    
 </body>
 
 </html>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ForEtec | Crie sua conta</title>
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/login.css">
 </head>
 
 <body class="acess">
@@ -30,12 +30,12 @@
 
         <footer>
             <button type="submit">Criar conta</button>
-            <p>Você já possui uma conta? <a href="login.php">Clique aqui!</a></p>
+            <p>Você já possui uma conta? <a href="?page=login">Clique aqui!</a></p>
         </footer>
     </form>
 
     <section class="section-left">
-        <img src="../assets/img/logo-foretec.png" alt="Logo do aplicativo o número quatro com um lápis">
+        <a href="./"><img src="assets/img/logo-foretec.png" alt="Logo do aplicativo o número quatro com um lápis"></a>
         <h1>For<span class="title-red">Etec</span></h1>
     </section>
 </body>

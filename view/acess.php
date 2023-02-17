@@ -15,7 +15,9 @@
 </head>
 
 <body class="acess">
-    <form method="post">
+    <form method="post" action="?page=controller">
+        <input type="hidden" name="action" value="cadaster">
+
         <header>
             <h1>Acesso</h1>
             <div class="row"></div>

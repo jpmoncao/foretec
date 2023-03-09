@@ -1,0 +1,23 @@
+#menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    font-size: 12px;
+    cursor: pointer;
+    -webkit-transition: .2s all;
+    -o-transition: .2s all;
+    transition: .2s all;
+    -webkit-tap-highlight-color: transparent;
+}
+
+#menu span:after {
+    left: 0;
+    top: -1em;
+}
+      
+#menu span:before {
+    left: 1em;
+    top: 1em;
+}

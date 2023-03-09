@@ -1,8 +1,7 @@
 <?php
+$servername = "localhost";
+$username = "root";
+$password = "123456";
+$dbname = "foretec";
 
-define('HOST', 'localhost');
-define('USER', 'root');
-define('PASSWORD', '123456');
-define('BASE', 'foretec');
-
-$conn = new mysqli(HOST, USER, PASSWORD, BASE);
+$conn = new mysqli($servername, $username, $password, $dbname);

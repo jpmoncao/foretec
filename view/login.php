@@ -8,10 +8,10 @@
     <title>ForEtec | Faça seu login</title>
 
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="../assets/css/login.css">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -23,23 +23,23 @@
 
         <main>
             <fieldset class="input-container">
-                <input type="number" name="rm" id="rm" class="input-field" max="99999" placeholder=" " required>
+                <input type="number" name="rm" id="rm" class="input-field" max="99999" placeholder=" " required />
                 <label for="rm" class="input-label">Registro de aluno</label>
             </fieldset>
             <fieldset class="input-container">
-                <input type="password" name="password" id="password" class="input-field" placeholder=" " required>
+                <input type="password" name="password" id="password" class="input-field" placeholder=" " required />
                 <label for="password" class="input-label">Senha</label>
             </fieldset>
         </main>
 
         <footer>
             <button type="submit">Entrar</button>
-            <p>Ainda não realizou seu primeiro acesso? <a href="?page=acess">Clique aqui!</a></p>
+            <p>Ainda não realizou seu primeiro acesso? <a href="./acess.php">Clique aqui!</a></p>
         </footer>
     </form>
 
     <section class="section-left">
-        <a href="./"><img src="assets/img/logo-foretec.png" alt="Logo do aplicativo o número quatro com um lápis"></a>
+        <a href="../"><img src="../assets/img/logo-foretec.png" alt="Logo do aplicativo o número quatro com um lápis"></a>
         <h1>For<span class="title-red">Etec</span></h1>
     </section>
 </body>

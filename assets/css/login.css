@@ -183,6 +183,10 @@ footer button:active {
     transform: translateY(5px);
 }
 
+footer button:disabled {
+    background-color: var(--color1);
+}
+
 footer p {
     font-family: 'Poppins';
     font-weight: 400;

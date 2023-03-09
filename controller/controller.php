@@ -1,20 +1,25 @@
 <?php
-switch ($_REQUEST['action']) {
+switch (@$_REQUEST['action']) {
     case 'cadaster':
-        $rm = $_POST['rm'];
+        require('./alunoController.php');
+        require('../lib/uuidGenerator.php');
+
+        $uuid = uuidV4();
+        $name = $_POST['name'];
         $bornDate = $_POST['data_nascimento'];
+        $rm = $_POST['rm'];
+        $password = password_hash($_POST["senha"], PASSWORD_DEFAULT);
 
-        $sql = "INSERT INTO aluno (rm, data_nascimento)
-        VALUES ('$rm', '$bornDate')";
+        $sql = "INSERT INTO aluno (uuid, nome, data_nascimento, rm, senha) VALUES ('$uuid', '$name', '$bornDate', '$rm', '$password')";
 
-        $res = $conn->query($sql);
+        $res = $conn->prepare($sql);
 
         if ($res) {
             print("<script>alert('Usuário $rm foi cadastrado com sucesso!')</script>");
-            print("<script>location.href='?page=login'</script>");
+            print("<script>location.href='../view/login.php'</script>");
         } else {
             print("<script>alert('Falha ao cadastrar usuário!')</script>");
-            print("<script>location.href='?page=acess'</script>");
+            print("<script>location.href='../view/acess.php'</script>");
         }
         break;
 }

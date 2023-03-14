@@ -15,8 +15,8 @@
 </head>
 
 <body class="acess">
-    <form method="post" action="../controller/controller.php">
-        <input type="hidden" name="action" value="cadaster">
+    <form method="post" action="../controller/insert.php">
+        <input type="hidden" name="action" id="action" value="cadaster">
 
         <header>
             <h1>Acesso</h1>

@@ -15,7 +15,9 @@
 </head>
 
 <body>
-    <form method="post">
+    <form method="post" action="../controller/get.php">
+        <input type="hidden" name="action" id="action" value="login">
+
         <header>
             <h1>Login</h1>
             <div class="row"></div>

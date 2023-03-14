@@ -1,3 +1,5 @@
+<?php include('../src/check.login.php'); ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -39,17 +41,18 @@
                 <h1>Bases, vamos para <span class="text-color">prática</span>!</h1> 
                 <p id="parag-d2">Aqui está todas as materias que você verá nessa jornada, jovem Padawan.</p>
                <div class="card-roll">
-                   <div class="card">1</div>
-                   <div class="card">2</div>
-                   <div class="card">3</div>
-                   <div class="card">4</div>
-                   <div class="card">5</div>
-                   <div class="card">6</div>
-                   <div class="card">7</div>
-                   <div class="card">8</div>
-                   <div class="card">9</div>
-                   <div class="card">10</div>
+                   <div class="card humanas">História</div>
+                   <div class="card exatas">Matemática</div>
+                   <div class="card linguas">Português</div>
+                   <div class="card humanas">Geografia</div>
+                   <div class="card other">Ênfase em exatas </div>
+                   <div class="card linguas">Espanhol</div>
+                   <div class="card exatas">Física</div>
+                   <div class="card other">Química</div>
+                   <div class="card linguas">Inglês</div>
                </div>
+               <img class="pass-button" src="../assets/img/arrow.png" alt="imagem de uma seta">
+               <img class="prev-button" src="../assets/img/arrow.png" alt="imagem de uma seta">
         </div>
         <div class= "div-block">
         
@@ -57,7 +60,7 @@
         
     </main>
 
-    <script src="../assets/js/toggleMenu.js"></script>
+    <script src="../assets/js/home.js"></script>
 </body>
 
 </html>

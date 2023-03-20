@@ -30,10 +30,11 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `aluno` (
   `id` int(11) NOT NULL,
-  `uuid` char(26) NOT NULL,
+  `uuid` char(36) NOT NULL,
   `nome` varchar(255) NOT NULL,
   `data_nascimento` date NOT NULL,
-  `rm` int(5) NOT NULL
+  `rm` int(5) NOT NULL,
+  `senha` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --

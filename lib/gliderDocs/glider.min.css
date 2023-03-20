@@ -1,0 +1,134 @@
+.glider {
+    margin-top: 1.7rem;
+    max-width: 52%;
+    display: flex;
+    height: 8rem;
+    margin-bottom: 1rem;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: none;
+    transform: translateZ(0)
+}
+
+
+.glider-dot {
+    position: relative;
+    right: 25%;
+    border: 0;
+    padding: 0;
+    user-select: none;
+    outline: 0
+}
+
+
+
+.glider-track {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    z-index: 1
+}
+
+.glider.draggable {
+    user-select: none;
+    cursor: -webkit-grab;
+    cursor: grab
+}
+
+.glider.drag {
+    cursor: -webkit-grabbing;
+    cursor: grabbing
+}
+
+.glider::-webkit-scrollbar {
+    display: none;
+}
+
+
+.glider-hide {
+    opacity: 0
+}
+
+.glider-dots {
+    user-select: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0
+}
+
+.glider-dot {
+    display: block;
+    cursor: pointer;
+    color: rgb(12, 12, 12);
+    border-radius: 999px;
+    background: rgb(2, 2, 2)c;
+    width: 12px;
+    height: 12px;
+    margin: 7px
+}
+
+.glider-dot:focus, .glider-dot:hover {
+    background: rgb(124, 120, 120)
+}
+
+.glider-dot.active {
+    background: rgb(0, 0, 0);
+}
+
+.card {
+    font-size: 0.9rem;
+    min-width: 7rem;
+    height: 8rem;
+    border-radius: 0.5rem;
+    background-color: red;
+    margin-right: 1rem;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    color: white;
+    text-shadow: 0px 2px 16px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.pass-button {
+    position: absolute;
+    right: 0.1%;
+    bottom: 34%;
+    cursor: pointer;
+}
+
+.prev-button {
+    position: absolute;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+    bottom: 34%;
+    left: 8%;
+    cursor: pointer;
+}
+
+.pass-button:hover {
+    filter: drop-shadow(0px 4px 16px black);
+  }
+  
+  /* Style cards */
+  
+  .humanas {
+    background-image: var(--fade-humanas);
+  }
+  
+  .exatas {
+    background-image: var(--fade-exatas);
+  }
+  
+  .other {
+    background-image: var(--fade-other);
+  }
+  
+  .linguas {
+    background-image: var(--fade-linguas);
+  }
+  

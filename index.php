@@ -19,8 +19,8 @@
         <h1>For<span class="title-red">Etec</span></h1>
     </header>
 
-    <section class="first-content">
-        <img src="assets/img/illustration-raising-hand-study.svg" alt="imagem de uma pessoa estudando">
+    <section class="first-content" id="first-content">
+        <img src="assets/img/illustrations/illustration-raising-hand-study.svg" alt="imagem de uma pessoa estudando">
         <div>
             <h1>A plataforma que veio para auxiliar os etequianos!</h1>
             <p>Acesse com o seu RA e data de nascimento</p>
@@ -31,7 +31,7 @@
     </section>
 
     <section class="method">
-        <img src="assets/img/book-animate.gif" alt="Imagem de um livro aberto com um fundo redondo em vermelho">
+        <img src="assets/img/gif/book-animate.gif" alt="Imagem de um livro aberto com um fundo redondo em vermelho">
         <div>
             <h2>O método mais divertido do mundo de estudar</h2>
             <p>Estude de maneira fácil e divertida com a plataforma For<span class="title-red">Etec</span>! Com lições rápidas e interativas atribuidas pelos seus próprios professores.</p>
@@ -45,7 +45,7 @@
             <h2>Quem somos</h2>
             <p>Lorena ayumi dolor sit amet consectetur adipisicing elit. Tenetur, libero harum nesciunt quasi autem numquam dolor amet qui nostrum aperiam quae ducimus nobis corporis fugit, molestiae commodi officia sunt ipsa?</p>
         </div>
-        <img src="assets/img/icon-logo.png" alt="Imagem de um círculo com o logo no centro e um chapéu universitário em cima">
+        <img src="assets/img/branding/icon-logo.png" alt="Imagem de um círculo com o logo no centro e um chapéu universitário em cima">
         <div>
             <h2>Nosso objetivo</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, libero harum nesciunt quasi autem numquam dolor amet qui nostrum aperiam quae ducimus nobis corporis fugit, molestiae commodi officia sunt ipsa?</p>
@@ -56,8 +56,15 @@
 
     </section>
 
-    <section class="colaboration">
+    <section class="teacher">
+        <div>
+            <h1>Se você é professor, crie agora seu banco de questões</h1>
+            <p>Torne o seu ambiente escolar mais lúdico</p>
 
+            <a href="view/professor/acess.php"><button>cadastre-se agora</button></a>
+            <a href="view/professor/login.php"><button class="acess">já tenho uma conta</button></a>
+        </div>
+        <img src="assets/img/illustrations/illustration-teacher.svg" alt="imagem de uma professora alfabetizando duas crianças">
     </section>
 
     <article class="return">
@@ -79,14 +86,13 @@
             </div>
         </section>
         <section class="buttons">
-            <a href="view/acess.php"><button>cadastre-se agora</button></a>
-            <a href="view/login.php"><button class="acess">já tenho uma conta</button></a>
+            <a href="#first-content"><button>vamos lá!</button></a>
         </section>
     </article>
 
     <footer>
         <div class="footer-logo">
-            <img src="assets/img/logo-foretec.png" alt="Imagem de um círculo com o logo no centro e um chapéu universitário em cima">
+            <img src="assets/img/branding/logo.png" alt="Imagem de um círculo com o logo no centro e um chapéu universitário em cima">
             <h3>For<span class="title-red">Etec</span></h1>
         </div>
 

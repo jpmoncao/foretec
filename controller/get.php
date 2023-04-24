@@ -1,73 +1,102 @@
 <?php
-    if(isset($_REQUEST['action']) && $_REQUEST['action'] === 'login') {
-        // Cria uma conexão com o banco de dados
-        $conn = new mysqli("localhost", "root", "123456", "foretec");
+if (isset($_REQUEST['action']) && $_REQUEST['action'] === 'login') {
+    // Cria uma conexão com o banco de dados
+    require_once('../src/config.php');
 
-        // Verifica se houve erro ao conectar ao banco de dados
-        if ($conn->connect_error) {
-            // Interrompe o script e exibe mensagem de erro
-            die("Erro ao conectar ao banco de dados: " . $conn->connect_error);
-        }
+    // Recebe dados do formulário
+    $rm = $_POST['rm'];
+    $senha = $_POST['password'];
 
-        // Recebe dados do formulário
-        $rm = $_POST['rm'];
-        $senha = $_POST['password'];
+    // Executa consulta SQL para selecionar os dados do aluno através do RM informado
+    $result = $conn->query("SELECT * FROM alunos WHERE rm = $rm");
 
-        // Executa consulta SQL para selecionar os dados do aluno através do RM informado
-        $result = $conn->query("SELECT * FROM aluno WHERE rm = $rm");
+    // Se encontrou um usuário com esse email    
+    if ($result->num_rows === 1) {
+        $row = $result->fetch_assoc();
 
-        // Armazena os dados de UUID e senha criptografada recuperados do banco de dados
-        while ($row = $result->fetch_assoc()) {
-            $uuid = $row['uuid'];
-            $nome = $row['nome'];
-            $data_nascimento = $row['data_nascimento'];
-            $hash = $row['senha'];
-        }
+        $hash = $row['senha'];
 
-        // Verifica se a senha informada corresponde à senha criptografada armazenada no banco de dados
+        // Se a senha está correta
         if (password_verify($senha, $hash)) {
-            // Inicia uma sessão e armazena o UUID do aluno
+            // Remove a senha do array
+            unset($row['senha']);
+
+            // Inicia a sessão
             session_start();
-            $_SESSION["uuid"]=$uuid;
-            $_SESSION["nome"]=$nome;
-            $_SESSION["data_nascimento"]=$data_nascimento;
+            $_SESSION['aluno'] = $row;
 
             // Redireciona para a página home.php
-            header("Location: ../view/home.php");
-            exit();
+            header('Location: ../view/home.php');
+            exit;
         } else {
-            // Interrompe o script e exibe mensagem de erro
-            die("Senha incorreta!");
+            // Exibe um alerta informando que a senha está incorreta
+            echo ('
+                    <script>
+                        alert("Senha incorreta!");
+                        window.location.href = "../view/login.php";
+                    </script>
+                ');
         }
-
-        // Fecha a conexão com o banco de dados
-        $conn->close();
+    } else {
+        // Exibe um alerta informando que o usuário não foi encontrado
+        echo ('
+                <script>
+                    alert("Usuário não encontrado!");
+                    window.location.href = "../view/login.php";
+                </script>
+            ');
     }
 
-    // if(isset($_REQUEST['action']) && $_REQUEST['action'] === 'uuid') {
-    //     // Cria uma conexão com o banco de dados
-    //     $conn = new mysqli("localhost", "root", "123456", "foretec");
-        
-    //     // Verifica se houve erro ao conectar ao banco de dados
-    //     if ($conn->connect_error) {
-    //         // Interrompe o script e exibe mensagem de erro
-    //         die("Erro ao conectar ao banco de dados: " . $conn->connect_error);
-    //     }
-        
-    //     // die($_REQUEST['action']);
-    //     // Executa consulta SQL para selecionar os dados do aluno através do RM informado
-    //     $result = $conn->query("SELECT * FROM aluno WHERE uuid = ". $_REQUEST['uuid']);
+    // Fecha a conexão com o banco de dados
+    $conn->close();
+} elseif (isset($_REQUEST['action']) && $_REQUEST['action'] === 'login-professor') {
+    // Cria uma conexão com o banco de dados
+    require_once('../src/config.php');
 
-    //     // Armazena os dados de UUID e senha criptografada recuperados do banco de dados
-    //     while ($row = $result->fetch_assoc()) {
-    //         $uuid = $row['uuid'];
-    //         $name = $row['name'];
-    //         $data_nascimento = $row['data_nascimento'];
-    //     }
+    // Recebe dados do formulário
+    $rp = $_POST['rp'];
+    $senha = $_POST['password'];
 
-    //     header("Location: ../view/home.php");
-    //     exit();
+    // Executa consulta SQL para selecionar os dados do aluno através do RM informado
+    $result = $conn->query("SELECT * FROM professores WHERE rp = $rp");
 
-    //     // Fecha a conexão com o banco de dados
-    //     $conn->close();
-    // }
+    // Se encontrou um usuário com esse email    
+    if ($result->num_rows === 1) {
+        $row = $result->fetch_assoc();
+
+        $hash = $row['senha'];
+
+        // Se a senha está correta
+        if (password_verify($senha, $hash)) {
+            // Remove a senha do array
+            unset($row['senha']);
+
+            // Inicia a sessão
+            session_start();
+            $_SESSION['professor'] = $row;
+
+            // Redireciona para a página home.php
+            header('Location: ../view/professor/home.php');
+            exit;
+        } else {
+            // Exibe um alerta informando que a senha está incorreta
+            echo ('
+                    <script>
+                        alert("Senha incorreta!");
+                        window.location.href = "../index.php";
+                    </script>
+                ');
+        }
+    } else {
+        // Exibe um alerta informando que o usuário não foi encontrado
+        echo ('
+                <script>
+                    alert("Usuário não encontrado!");
+                    window.location.href = "../index.php";
+                </script>
+            ');
+    }
+
+    // Fecha a conexão com o banco de dados
+    $conn->close();
+}

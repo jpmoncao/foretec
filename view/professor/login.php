@@ -14,16 +14,16 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- STYLESHEET -->
-    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="../../assets/css/login.css">
 
     <!-- FAVICON -->
-    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../../assets/favicon.ico" type="image/x-icon">
 
 </head>
 
-<body>
-    <form method="post" action="../controller/get.php">
-        <input type="hidden" name="action" id="action" value="login">
+<body class="professor">
+    <form method="post" action="../../controller/get.php">
+        <input type="hidden" name="action" id="action" value="login-professor">
 
         <header>
             <div>
@@ -40,14 +40,14 @@
                 }; ?>
                 
             </div>
-            <h1>Login</h1>
+            <h1>Login do professor</h1>
             <div class="row"></div>
         </header>
 
         <main>
             <fieldset class="input-container">
-                <input type="number" name="rm" id="rm" class="input-field" max="99999" placeholder=" " required />
-                <label for="rm" class="input-label">Registro de matrícula</label>
+                <input type="number" name="rp" id="rp" class="input-field" max="99999" placeholder=" " required />
+                <label for="rp" class="input-label">Registro do professor</label>
             </fieldset>
             <fieldset class="input-container">
                 <input type="password" name="password" id="password" class="input-field" placeholder=" " required />
@@ -62,8 +62,8 @@
     </form>
 
     <section class="section-left">
-        <a href="../"><img src="../assets/img/branding/logo.png" alt="Logo do aplicativo o número quatro com um lápis"></a>
-        <h1>For<span class="title-red">Etec</span></h1>
+        <a href="../../"><img src="../../assets/img/branding/logo-w.png" alt="Logo do aplicativo o número quatro com um lápis"></a>
+        <h1>ForEtec</h1>
     </section>
 </body>
 

@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    /* DOCUMENT COLORS */
+    --white: #f1f1f1;
+    --black: #222326;
+    --gray: #2B2C30;
+    --font-gray: #AAA5A5;
+    /* COLORS */
+    --color1: #F26389;
+    --color2: #F2134F;
+    --color3: #F2133C;
+    --color4: #D91122;
+    --color5: #AAA5A5;
+    /* FADES */
+    --fade-main: linear-gradient(107.33deg, #F24913 -1%, #F2134F 46.87%, #F2138B 100%);
+    --fade-humanas: linear-gradient(152.8deg, #FFA62E 3.07%, #EA4D2C 98.11%);
+    --fade-exatas: linear-gradient(152.8deg, #00FFED 3.07%, #007882 98.11%);
+    --fade-linguas: linear-gradient(152.8deg, #F869D5 3.07%, #5650DE 98.11%);
+    --fade-other: linear-gradient(152.8deg, #FFCDA5 3.07%, #EE4D5F 98.11%);
+    /* FONTS */
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Poppins', Helvetica, Arial, sans-serif;
+    color: var(--black);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    position: relative;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+    
+    background-color: var(--white);
+    border-top-left-radius: 3rem;
+    border-top-right-radius: 3rem;
+    
+    width: 40vw;
+    height: 91vh;
+    padding: 8rem 2rem;
+    margin: 0 auto;
+}
+
+main section article.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+main section article.text a {
+    margin-bottom: -2rem;
+}
+
+main section article.text button {
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--color4);
+    border-radius: 16px;
+
+    padding: 0.5rem 2rem;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1em;
+    color: var(--color4);
+    line-height: 12px;
+    letter-spacing: 0.095em;
+    text-align: center;
+    transition-duration: .3s;
+    text-decoration: none;
+}
+
+main section article.text button:hover {
+    text-shadow: 0px 4px 6px rgba(217, 17, 34, 0.4);
+    box-shadow: 0px 4px 6px rgba(217, 17, 34, 0.4);
+    transition-duration: .3s;
+}
+
+main section article.text h1 {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2em;
+    line-height: 45px;
+    color: #000000;
+}
+
+main section article.text p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 45px;
+    color: #000000;
+}
+
+main section article.div-streak {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+    height: 12rem;
+    width: 12rem;
+    margin: 0 auto;
+    
+   
+    position: relative;
+}
+
+main section article.div-streak::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    -webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor; 
+        mask-composite: exclude;
+}
+
+main section article.div-streak h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 2rem;
+    line-height: 45px;
+}
+
+main section article.div-streak p {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 45px;
+
+    z-index: 50;
+}
+
+main section article.div-streak p.streak-number {
+  font-family: 'Quicksand';
+  font-size: 6rem;
+  line-height: 7.5rem;
+}
+
+
+
+main section article.container-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+main section article.container-buttons button {
+    width: 12rem;
+    padding: .5rem 0;
+    
+    filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+    border: none;
+    border-bottom: 4px solid #000;
+    outline: none;
+    
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 30px;
+    
+    letter-spacing: -0.05em;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    transition-duration: .3s;
+}
+
+main section article.container-buttons button:hover,
+main section article.material div button:hover {
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px);
+    transition-duration: .3s;
+}
+
+main section article.container-buttons button:active,
+main section article.material div button:active {
+    transform: translateY(5px);
+}
+
+main section article.material {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+main section article.material div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section article.material div p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5em;
+    line-height: 36px;
+
+    color: #000000;
+}
+
+main section article.material div button {
+    outline: none;
+    border: none;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+main section article.material div button img {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+/* COLORS THEME */
+span.title-red {
+    color: var(--color4);
+}
+
+body {
+    height: 100vh;
+}
+
+body.humanas,
+body.humanas article.container-buttons button,
+body.humanas span.text-color,
+body.humanas p.streak-number,
+body.humanas article.material div button{
+    background-image: var(--fade-humanas);
+}
+
+body.exatas,
+body.exatas article.container-buttons button,
+body.exatas span.text-color,
+body.exatas p.streak-number,
+body.exatas article.material div button{
+    background-image: var(--fade-exatas);
+}
+
+body.linguas,
+body.linguas article.container-buttons button,
+body.linguas span.text-color,
+body.linguas p.streak-number,
+body.linguas article.material div button{
+    background-image: var(--fade-linguas);
+}
+
+body.other,
+body.other article.container-buttons button,
+body.other span.text-color,
+body.other p.streak-number,
+body.other article.material div button{
+    background-image: var(--fade-other);
+}
+
+body.humanas main section article.div-streak::before{
+    background: var(--fade-humanas) border-box;
+}
+
+body.exatas main section article.div-streak::before{
+    background: var(--fade-exatas) border-box;
+}
+
+body.linguas main section article.div-streak::before{
+    background: var(--fade-linguas) border-box;
+}
+
+body.other main section article.div-streak::before{
+    background: var(--fade-other) border-box;
+}
+
+.text-color,
+p.streak-number { 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.humanas article.container-buttons button.acess,
+body.exatas article.container-buttons button.acess,
+body.linguas article.container-buttons button.acess,
+body.other article.container-buttons button.acess{
+    background: var(--black);
+}

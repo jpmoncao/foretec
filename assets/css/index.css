@@ -69,7 +69,8 @@ header h1 {
 }
 
 body {
-    background-color: var(--gray);
+    background-color: var(--black);
+    scroll-behavior: smooth;
 }
 
 section {
@@ -249,15 +250,102 @@ section.premium {
     box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25), inset 0px 0px 16px rgba(0, 0, 0, 0.25);
 }
 
-section.colaboration {
-    height: 42vh;
+section.teacher {
+    padding: 0 16vw 0 16vw;
+    height: 70vh;
     background-color: var(--gray);
+    box-shadow: inset 0px 0px 16px rgb(0, 0, 0, 0.25);
+}
+
+section.teacher img {
+    width: 32rem;
+    height: 32rem;
+    margin-top: 2rem;
+}
+
+section.teacher div {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    max-width: 50%;
+}
+
+section.teacher div * {
+    font-family: 'Poppins';
+    font-style: normal;
+}
+
+section.teacher div h1 {
+    font-weight: 500;
+    font-size: 2em;
+    line-height: 102.5%;
+    color: var(--white);
+    text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+section.teacher div p {
+    color: var(--color3);
+    font-size: 1em;
+    line-height: 0%;
+    text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.25);
+}
+
+section.teacher div button {
+    width: 12rem;
+    padding: .5rem 0;
+
+    background: var(--color3);
+    filter: drop-shadow(0px 4px 16px rgba(0, 0, 0, 0.25));
+    border-radius: 12px;
+    border: none;
+    border-bottom: 4px solid #4D000E;
+    outline: none;
+
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 1em;
+    line-height: 30px;
+
+    letter-spacing: -0.05em;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    transition-duration: .3s;
+}
+
+section.teacher div button.acess {
+    background: transparent;
+    border: 2px solid #3F525B;
+    border-bottom: 4px solid #3F525B;
+    transition-duration: .3s;
+}
+
+section.teacher div button.acess:hover {
+    background-color: #3F525B;
+    border: 2px solid var(--black);
+    border-bottom: 4px solid var(--black);
+    box-shadow: 0px 8px 16px rgba(63, 82, 91, 0.4);
+    transform: translateY(-5px);
+    transition-duration: .3s;
+}
+
+section.teacher div button:hover {
+    background-color: var(--color2);
+    box-shadow: 0px 8px 16px rgba(242, 99, 137, 0.4);
+    transform: translateY(-5px);
+    transition-duration: .3s;
+}
+
+section.teacher div button:active {
+    transform: translateY(5px);
 }
 
 /* CTA */
 article.return {
     position: relative;
-    top: 7.5vh;
+    top: -5vh;
 
     height: 15vh;
     width: 70vw;
@@ -333,22 +421,6 @@ article.return section.buttons button {
     transition-duration: .3s;
 }
 
-article.return section.buttons button.acess {
-    background: var(--black);
-    border: 2px solid #3F525B;
-    border-bottom: 4px solid #3F525B;
-    transition-duration: .3s;
-}
-
-article.return section.buttons button.acess:hover {
-    background-color: #3F525B;
-    border: 2px solid var(--black);
-    border-bottom: 4px solid var(--black);
-    box-shadow: 0px 8px 16px rgba(63, 82, 91, 0.4);
-    transform: translateY(-5px);
-    transition-duration: .3s;
-}
-
 article.return section.buttons button:hover {
     background-color: var(--color2);
     box-shadow: 0px 8px 16px rgba(242, 99, 137, 0.4);
@@ -363,8 +435,7 @@ article.return  section.first-content div button:active {
 /* FOOTER */
 footer {
     height: 36vh;
-    padding-top: 16vh;
-    background: linear-gradient(182.72deg, #232526 2.59%, #2B2D2F 87.91%, #313233 178.87%);
+    background: var(--black);
     box-shadow: inset 0px -4px 16px #2D2427;
 
     display: flex;
